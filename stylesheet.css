@@ -27,27 +27,30 @@ body {
     padding: 0;
 }
 
-.container {
+.content {
+    width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    /* margin: 0 auto; */
+    /* padding: 2rem; */
 }
 
+/* .container { */
+/*     max-width: 1200px; */
+/*     margin: 0 auto; */
+/*     padding: 2rem; */
+/*     min-height: 100vh; */
+/*     display: flex; */
+/*     flex-direction: column; */
+/*     justify-content: center; */
+/*     align-items: center; */
+/*     text-align: center; */
+/* } */
+
 .section {
-    width: 100%;
+    /* width: 100%; */
     padding: 4rem 2rem;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 .section:nth-child(odd) {
@@ -146,6 +149,20 @@ span {
 
 /* Hero section */
 .hero  {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+
+    background-image: url('assets/flor_vermelha.png');
+    background-image: url('assets/flor_rosa.png');
+
+    .flowers {
+        max-width: 75%;
+        height: 100px;
+
+    }
+
     h1 {
         font-size: 77px;
     }
