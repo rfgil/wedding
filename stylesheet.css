@@ -36,8 +36,89 @@ h1 {
     color: #2c3e50;
 }
 
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
 p {
     font-size: 1.2rem;
     color: #666;
+}
+
+a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #2c3e50;
+    border: 2px solid #2c3e50;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+a:hover {
+    background: #2c3e50;
+    color: white;
+}
+
+span {
+    display: block;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p, span {
+        font-size: 1.1rem;
+    }
+
+    a {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+
+    p, span {
+        font-size: 1rem;
+    }
+
+    a {
+        font-size: 0.95rem;
+        padding: 0.6rem 1rem;
+        margin: 1rem 0;
+    }
 }
 
