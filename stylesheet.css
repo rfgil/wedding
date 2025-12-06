@@ -216,8 +216,60 @@ span {
         width: 375px;
         filter: grayscale(100%);
     }
+}
 
+/* Detalhes do dia */
+.details {
+    h1 {
+        margin-bottom: 3rem;
+    }
 
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
 
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
 
+    .events {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .event {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        min-width: 300px;
+    }
+
+    .time {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 0.5rem;
+        color: var(--color-heading);
+    }
+
+    .note {
+        margin-top: 2rem;
+        font-style: italic;
+    }
+}
+
+@media (max-width: 768px) {
+    .details .events {
+        flex-direction: column;
+        gap: 3rem;
+    }
 }
