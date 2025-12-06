@@ -273,3 +273,123 @@ span {
         gap: 3rem;
     }
 }
+
+/* Informações */
+.info {
+    h1 {
+        margin-bottom: 3rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .info-item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 0.5rem;
+    }
+
+    .info-item h2 {
+        margin-top: 1.5rem;
+    }
+
+    .info-item h2:first-child {
+        margin-top: 0;
+    }
+
+    .info-item p {
+        margin-bottom: 0.5rem;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0.5rem 0 0 0;
+    }
+
+    li {
+        font-family: 'Abhaya Libre';
+        font-size: 17px;
+        margin-bottom: 0.3rem;
+        padding-left: 1rem;
+        position: relative;
+    }
+
+    li:before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--color-heading);
+    }
+}
+
+@media (max-width: 768px) {
+    .info .info-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .info .info-item {
+        align-items: center;
+        text-align: center;
+    }
+
+    .info li {
+        text-align: left;
+    }
+}
+
+/* Honeymoon */
+.honeymoon {
+    .content {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    img {
+        width: 375px;
+    }
+
+    .iban {
+        font-weight: 600;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .honeymoon .content {
+        flex-direction: column;
+    }
+
+    .honeymoon img {
+        width: 100%;
+        max-width: 375px;
+    }
+}
