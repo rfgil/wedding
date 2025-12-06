@@ -11,11 +11,15 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-heading);
 }
 
-* {
+p {
     font-family: 'Abhaya Libre';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.body {
+    font-size: 17px;
 }
 
 body {
@@ -51,6 +55,8 @@ body {
     padding: 4rem 2rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .section:nth-child(odd) {
@@ -150,8 +156,6 @@ span {
 /* Hero section */
 .hero  {
     justify-content: center;
-    align-items: center;
-    text-align: center;
     min-height: 100vh;
 
     background-image: url('assets/flor_rosa.png'), url('assets/flor_vermelha.png');
@@ -191,3 +195,29 @@ span {
 
 }
 
+
+/* Como tudo começou */
+.beginning {
+    .content {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    img {
+        width: 375px;
+        filter: grayscale(100%);
+    }
+
+
+
+
+}
