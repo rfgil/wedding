@@ -4,6 +4,10 @@
     --color-heading: #9d2e37;
 }
 
+html {
+    font-size: 17px; /* Base font size - all rem units are relative to this */
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', Georgia, serif;
     font-weight: 400;
@@ -18,10 +22,6 @@ p {
     box-sizing: border-box;
 }
 
-.body {
-    font-size: 17px;
-}
-
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
@@ -34,24 +34,10 @@ body {
 .content {
     width: 100%;
     max-width: 1200px;
-    /* margin: 0 auto; */
-    /* padding: 2rem; */
 }
 
-/* .container { */
-/*     max-width: 1200px; */
-/*     margin: 0 auto; */
-/*     padding: 2rem; */
-/*     min-height: 100vh; */
-/*     display: flex; */
-/*     flex-direction: column; */
-/*     justify-content: center; */
-/*     align-items: center; */
-/*     text-align: center; */
-/* } */
 
 .section {
-    /* width: 100%; */
     padding: 4rem 2rem;
     display: flex;
     flex-direction: column;
@@ -153,6 +139,7 @@ span {
     }
 }
 
+/* Sections */
 /* Hero section */
 .hero  {
     justify-content: center;
@@ -170,11 +157,11 @@ span {
     }
 
     h1 {
-        font-size: 77px;
+        font-size: 4.5rem;
     }
 
     p {
-        font-size: 30px;
+        font-size: 1.75rem;
     }
 
     a {
@@ -183,7 +170,7 @@ span {
     }
 
     .location {
-        font-size: 19px;
+        font-size: 1.25rem;
         font-weight: bold;
         margin-top: 10px;
 
@@ -327,7 +314,7 @@ span {
 
     li {
         font-family: 'Abhaya Libre';
-        font-size: 17px;
+        font-size: 1rem;
         margin-bottom: 0.3rem;
         padding-left: 1rem;
         position: relative;
