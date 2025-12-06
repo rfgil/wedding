@@ -154,8 +154,10 @@ span {
     text-align: center;
     min-height: 100vh;
 
-    background-image: url('assets/flor_vermelha.png');
-    background-image: url('assets/flor_rosa.png');
+    background-image: url('assets/flor_rosa.png'), url('assets/flor_vermelha.png');
+    background-position: calc(50% - 125px) -400px, calc(50% + 125px) -400px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 600px, 600px;
 
     .flowers {
         max-width: 75%;
