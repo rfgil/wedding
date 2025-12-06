@@ -8,6 +8,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', Georgia, serif;
     font-weight: 400;
     letter-spacing: 0.02em;
+    color: var(--color-heading);
 }
 
 * {
@@ -27,7 +28,7 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
     min-height: 100vh;
@@ -57,33 +58,19 @@ body {
     background-color: var(--color-white);
 }
 
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #2c3e50;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-p {
-    font-size: 1.2rem;
-    color: #666;
-}
-
 a {
     display: inline-block;
-    padding: 0.75rem 1.5rem;
+    padding: 1rem 1.5rem;
     margin: 1.5rem 0;
     font-size: 1.1rem;
     text-decoration: none;
-    color: #2c3e50;
-    border: 2px solid #2c3e50;
-    border-radius: 4px;
+    /* border: 2px solid #2c3e50; */
     transition: all 0.3s ease;
     cursor: pointer;
+
+    border-radius: 26px;
+    background-color: var(--color-heading);
+    color: white;
 }
 
 a:hover {
@@ -155,5 +142,33 @@ span {
         padding: 0.6rem 1rem;
         margin: 1rem 0;
     }
+}
+
+/* Hero section */
+.hero  {
+    h1 {
+        font-size: 77px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    a {
+        width: 450px;
+
+    }
+
+    .location {
+        font-size: 19px;
+        font-weight: bold;
+        margin-top: 10px;
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
 }
 
