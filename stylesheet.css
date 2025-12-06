@@ -53,6 +53,30 @@ body {
     background-color: var(--color-white);
 }
 
+/* Image Grid Section */
+.section.images {
+    padding: 0;                          /* Remove default section padding */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+    gap: 0;                              /* No spacing between images */
+    width: 100%;
+    max-width: none;                     /* Allow full screen width */
+}
+
+.section.images img {
+    width: 100%;                         /* Fill grid cell width */
+    height: auto;                        /* Maintain 3:4 aspect ratio */
+    display: block;                      /* Remove inline spacing */
+    object-fit: cover;                   /* Backup: crop if needed */
+}
+
+/* Tablet & Mobile: 3 columns */
+@media (max-width: 768px) {
+    .section.images {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on small screens */
+    }
+}
+
 a {
     display: inline-block;
     padding: 1rem 1.5rem;

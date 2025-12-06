@@ -1,3 +1,8 @@
+Next steps:
+- Nav bar com animação com amplemarket.com
+
+
+
 # Home
 Mariana & Rafael
 vAMOS CASAR!
