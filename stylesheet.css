@@ -1,45 +1,11 @@
-
-/* @font-face { */
-/*     font-family: 'The Seasons'; */
-/*     src: url('Demo_Fonts/Fontspring-DEMO-theseasons-reg.otf') format('opentype'); */
-/*     font-weight: 400; */
-/*     font-style: normal; */
-/* } */
-/**/
-/* @font-face { */
-/*     font-family: 'The Seasons'; */
-/*     src: url('Demo_Fonts/Fontspring-DEMO-theseasons-it.otf') format('opentype'); */
-/*     font-weight: 400; */
-/*     font-style: italic; */
-/* } */
-/**/
-/* @font-face { */
-/*     font-family: 'The Seasons'; */
-/*     src: url('Demo_Fonts/Fontspring-DEMO-theseasons-lt.otf') format('opentype'); */
-/*     font-weight: 300; */
-/*     font-style: normal; */
-/* } */
-/**/
-/* @font-face { */
-/*     font-family: 'The Seasons'; */
-/*     src: url('Demo_Fonts/Fontspring-DEMO-theseasons-ltit.otf') format('opentype'); */
-/*     font-weight: 300; */
-/*     font-style: italic; */
-/* } */
-/**/
-/* @font-face { */
-/*     font-family: 'The Seasons'; */
-/*     src: url('Demo_Fonts/Fontspring-DEMO-theseasons-bd.otf') format('opentype'); */
-/*     font-weight: 700; */
-/*     font-style: normal; */
-/* } */
-/**/
-/* @font-face { */
-/*     font-family: 'The Seasons'; */
-/*     src: url('Demo_Fonts/Fontspring-DEMO-theseasons-bdit.otf') format('opentype'); */
-/*     font-weight: 700; */
-/*     font-style: italic; */
-/* } */
+@font-face {
+    /* <link rel="stylesheet" href="https://use.typekit.net/cze3dda.css"> */
+    font-family:"the-seasons";
+    src: url('the-seasons.woff2');
+    font-style:normal;
+    font-weight:400;
+    font-stretch:normal;
+}
 
 :root {
     --color-cream: #f8f7f1;
