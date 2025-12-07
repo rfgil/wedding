@@ -63,7 +63,7 @@ body {
 }
 
 /* Image Grid Section */
-.section.images {
+.images {
     padding: 0;                          /* Remove default section padding */
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
@@ -72,7 +72,7 @@ body {
     max-width: none;                     /* Allow full screen width */
 }
 
-.section.images img {
+.images img {
     width: 100%;                         /* Fill grid cell width */
     height: auto;                        /* Maintain 3:4 aspect ratio */
     display: block;                      /* Remove inline spacing */
@@ -81,7 +81,7 @@ body {
 
 /* Tablet & Mobile: 3 columns */
 @media (max-width: 768px) {
-    .section.images {
+    .images {
         grid-template-columns: repeat(3, 1fr); /* 3 columns on small screens */
     }
 }
