@@ -1,3 +1,46 @@
+
+/* @font-face { */
+/*     font-family: 'The Seasons'; */
+/*     src: url('Demo_Fonts/Fontspring-DEMO-theseasons-reg.otf') format('opentype'); */
+/*     font-weight: 400; */
+/*     font-style: normal; */
+/* } */
+/**/
+/* @font-face { */
+/*     font-family: 'The Seasons'; */
+/*     src: url('Demo_Fonts/Fontspring-DEMO-theseasons-it.otf') format('opentype'); */
+/*     font-weight: 400; */
+/*     font-style: italic; */
+/* } */
+/**/
+/* @font-face { */
+/*     font-family: 'The Seasons'; */
+/*     src: url('Demo_Fonts/Fontspring-DEMO-theseasons-lt.otf') format('opentype'); */
+/*     font-weight: 300; */
+/*     font-style: normal; */
+/* } */
+/**/
+/* @font-face { */
+/*     font-family: 'The Seasons'; */
+/*     src: url('Demo_Fonts/Fontspring-DEMO-theseasons-ltit.otf') format('opentype'); */
+/*     font-weight: 300; */
+/*     font-style: italic; */
+/* } */
+/**/
+/* @font-face { */
+/*     font-family: 'The Seasons'; */
+/*     src: url('Demo_Fonts/Fontspring-DEMO-theseasons-bd.otf') format('opentype'); */
+/*     font-weight: 700; */
+/*     font-style: normal; */
+/* } */
+/**/
+/* @font-face { */
+/*     font-family: 'The Seasons'; */
+/*     src: url('Demo_Fonts/Fontspring-DEMO-theseasons-bdit.otf') format('opentype'); */
+/*     font-weight: 700; */
+/*     font-style: italic; */
+/* } */
+
 :root {
     --color-cream: #f8f7f1;
     --color-white: #ffffff;
@@ -9,7 +52,7 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'the-seasons', 'The Seasons', Georgia, serif;
     font-weight: 400;
     letter-spacing: 0.02em;
     color: var(--color-heading);
