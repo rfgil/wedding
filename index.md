@@ -1,5 +1,7 @@
 Next steps:
 - Nav bar com animação com amplemarket.com
+- navigation refs with #
+
 
 
 

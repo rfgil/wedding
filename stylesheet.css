@@ -13,9 +13,12 @@
     --color-heading: #9d2e37;
 }
 
+/* *, *::before, *::after { box-sizing: inherit; } */
+
 html {
     font-size: 17px; /* Base font size - all rem units are relative to this */
     scroll-behavior: smooth;
+    /* box-sizing: border-box; */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,11 +28,11 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-heading);
 }
 
+
 p {
     font-family: 'Abhaya Libre';
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -42,8 +45,8 @@ body {
 }
 
 .content {
-    width: 100%;
-    max-width: 800px;
+    /* width: 100%; */
+    max-width: 1200px;
     padding: 4rem 3rem;
 }
 
@@ -55,11 +58,11 @@ body {
     text-align: center;
 }
 
-.section:nth-child(odd) {
+.section:nth-child(even) {
     background-color: var(--color-cream);
 }
 
-.section:nth-child(even) {
+.section:nth-child(odd) {
     background-color: var(--color-white);
 }
 
@@ -219,23 +222,46 @@ span {
 
 /* Como tudo começou */
 .beginning {
-    .content {
+    .flexbox {
         display: flex;
         flex-direction: row;
-        gap: 40px;
+        gap: 3em;
+        align-items: center;
+    }
+
+    .img {
+        flex: 1;
+        min-width: 0;
+        max-width: 400px;
+        filter: grayscale(100%);
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .flexbox > div:last-child {
     }
 
     .text {
+        flex: 2;
+        min-width: 300px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 10px;
     }
+}
 
-    img {
-        width: 375px;
-        filter: grayscale(100%);
+@media (max-width: 768px) {
+    .beginning .flexbox {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .beginning .img {
+        max-width: 100%;
     }
 }
 
