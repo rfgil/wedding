@@ -13,12 +13,12 @@
     --color-heading: #9d2e37;
 }
 
-/* *, *::before, *::after { box-sizing: inherit; } */
+*, *::before, *::after { box-sizing: inherit; }
 
 html {
     font-size: 17px; /* Base font size - all rem units are relative to this */
     scroll-behavior: smooth;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     font-family: 'Abhaya Libre';
 }
 
@@ -51,8 +51,10 @@ a {
 }
 
 h1 {
-    margin-bottom: 3rem;
+    font-size: 4.5rem;
+    margin-bottom: 0;
 }
+
 
 h2 {
     font-size: 1.75rem;
@@ -100,7 +102,7 @@ li:before {
     flex-direction: column;
     max-width: 1200px;
     padding: 4rem 3rem;
-    /* width: 100%; */
+    width: 100%;
 }
 
 
@@ -155,6 +157,11 @@ a.button {
     border-radius: 26px;
     background-color: var(--color-heading);
     color: white;
+
+    width: 450px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
 }
 
 a.button:hover {
@@ -231,7 +238,7 @@ span {
 /* Sections */
 /* Hero section */
 .hero  {
-    justify-content: center;
+    justify-content: space-between;
     min-height: 100vh;
 
     background-image: url('assets/flor_rosa.png'), url('assets/flor_vermelha.png');
@@ -239,29 +246,43 @@ span {
     background-repeat: no-repeat, no-repeat;
     background-size: 600px, 600px;
 
-    .flowers {
-        max-width: 75%;
-        height: 100px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+    .content {
+        align-items: center;
+        padding: 0 3rem;
     }
 
-    h1 {
-        font-size: 4.5rem;
-    }
-
-    p {
+    .subtitle {
         font-size: 1.75rem;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
     }
 
-    a {
-        width: 450px;
-
+    .bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 0 3rem 5rem 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     .location {
-        font-size: 1.25rem;
-        font-weight: bold;
-        margin-top: 10px;
+        font-size: 1.06rem;
+        /* font-weight: bold; */
+        margin-top: auto;
 
         width: 100%;
         display: flex;
@@ -425,40 +446,33 @@ span {
 
 /* Contacts */
 .contacts {
-    h1 {
-        margin-bottom: 2rem;
-    }
-
-
     img {
         width: 100%;
         max-width: 500px;
-        border-radius: 8px;
+        align-self: center;
+    }
+
+    h1 {
+        align-self: center;
     }
 
     .contact-grid {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
         gap: 4rem;
         margin-top: 1rem;
+
+        .contact-item:last-child {
+            text-align: right;
+        }
     }
 
     .contact-item {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-    }
-
-    .name {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: var(--color-heading);
-    }
-
-    .phone {
-        font-size: 1.1rem;
-        color: #666;
+        font-size: 1.18rem;
     }
 }
 
