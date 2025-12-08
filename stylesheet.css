@@ -15,6 +15,7 @@
 
 html {
     font-size: 17px; /* Base font size - all rem units are relative to this */
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -42,12 +43,12 @@ body {
 
 .content {
     width: 100%;
-    max-width: 1200px;
+    max-width: 800px;
+    padding: 4rem 3rem;
 }
 
 
 .section {
-    padding: 4rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -251,12 +252,6 @@ span {
         letter-spacing: 0.05em;
     }
 
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-    }
 
     .events {
         display: flex;
@@ -296,6 +291,12 @@ span {
 
 /* Informações */
 .info {
+    background-image: url('assets/flor_rosa.png'), url('assets/flor_vermelha.png');
+    background-position: top 50px right 50px, top right;
+    /* calc(50% - 125px) -400px, calc(50% + 125px) -400px; */
+    background-repeat: no-repeat, no-repeat;
+    background-size: 200px, 200px;
+
     h1 {
         margin-bottom: 3rem;
     }
@@ -305,11 +306,6 @@ span {
         margin-bottom: 1rem;
     }
 
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
     .info-grid {
         display: grid;
@@ -379,11 +375,6 @@ span {
 
 /* Honeymoon */
 .honeymoon {
-    .content {
-        display: flex;
-        flex-direction: row;
-        gap: 40px;
-    }
 
     .text {
         display: flex;
@@ -404,9 +395,6 @@ span {
 }
 
 @media (max-width: 768px) {
-    .honeymoon .content {
-        flex-direction: column;
-    }
 
     .honeymoon img {
         width: 100%;
@@ -420,12 +408,6 @@ span {
         margin-bottom: 2rem;
     }
 
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-    }
 
     img {
         width: 100%;
@@ -483,11 +465,6 @@ span {
         line-height: 1.8;
     }
 
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 .rsvp-form {
