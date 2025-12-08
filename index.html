@@ -11,11 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src="rsvp.js"></script>
     <div class="section hero">
         <div class="content">
             <h1>Mariana & Rafael</h1>
             <p>VAMOS CASAR!</p>
-            <a>CONFIRMAR PRESENÇA AQUI</a>
+            <a href="#rsvp">CONFIRMAR PRESENÇA AQUI</a>
             <div class="location">
                 <p>3 de Outubro de 2026</p>
                 <p>Gaeiras, Óbidos</p>
@@ -108,6 +109,62 @@
         </div>
     </div>
 
+    <div class="section rsvp" id="rsvp">
+        <div class="content">
+            <h1>Confirmação de Presença – Casamento de [Vossos Nomes]</h1>
+            <p class="intro">Por favor, confirmem a vossa presença até [Data]. A vossa resposta ajuda-nos a organizar tudo com carinho para que este dia seja inesquecível!</p>
+
+            <form class="rsvp-form">
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <!-- Contacto/Phone -->
+                <div class="form-group">
+                    <label for="phone">Contacto/Telefone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <!-- Attendance Confirmation -->
+                <div class="form-group">
+                    <label class="group-label">Confirmação de Presença *</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="attendance" value="sim" required>
+                            <span>Sim, estarei presente!</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="attendance" value="nao" required>
+                            <span>Infelizmente não poderei comparecer</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Number of Guests -->
+                <div class="form-group">
+                    <label for="guest-count">Número de Convidados *</label>
+                    <p class="helper-text">Incluindo a pessoa que preenche este formulário (máximo 10)</p>
+                    <input type="number" id="guest-count" name="guest-count" min="1" max="10" required>
+                </div>
+
+                <!-- Dynamic Guest Fields Container -->
+                <div id="guest-fields-container"></div>
+
+                <!-- Song Request -->
+                <div class="form-group">
+                    <label for="song">Sugestão de Música para a Pista de Dança 💃🕺</label>
+                    <p class="helper-text">Opcional: Sugira uma música que gostaria de ouvir na festa!</p>
+                    <input type="text" id="song" name="song" placeholder="Nome da música e artista...">
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-button">Enviar Confirmação</button>
+            </form>
+        </div>
+    </div>
+
     <div class="section contacts">
         <div class="content">
             <h1>Contactos</h1>
@@ -123,9 +180,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="section">
     </div>
 </body>
 </html>
