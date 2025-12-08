@@ -62,6 +62,11 @@ h2 {
 }
 
 h3 {
+    font-size: 1.3em;
+    color: var(--color-heading);
+}
+
+h4 {
     font-family: 'Abhaya Libre';
     font-size: 1.06rem;
     font-weight: bold;
@@ -268,7 +273,7 @@ span {
 
 
 /* Como tudo começou */
-.beginning {
+.honeymoon, .beginning {
     .flexbox {
         display: flex;
         flex-direction: row;
@@ -280,7 +285,6 @@ span {
         flex: 1;
         min-width: 0;
         max-width: 400px;
-        filter: grayscale(100%);
 
         img {
             width: 100%;
@@ -300,13 +304,15 @@ span {
 }
 
 @media (max-width: 768px) {
-    .beginning .flexbox {
-        flex-direction: column;
-        gap: 2rem;
-    }
+    .beginning, .honeymoon {
+        .flexbox {
+            flex-direction: column;
+            gap: 2rem;
+        }
 
-    .beginning .img {
-        max-width: 100%;
+        .img {
+            max-width: 100%;
+        }
     }
 }
 
@@ -409,32 +415,11 @@ span {
     }
 }
 
-/* Honeymoon */
+
 .honeymoon {
-
-    .text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    img {
-        width: 375px;
-    }
-
-    .iban {
-        font-weight: 600;
-        margin-top: 1rem;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .honeymoon img {
-        width: 100%;
-        max-width: 375px;
+    p.iban {
+        font-size: 1.18rem;
+        color: var(--color-heading);
     }
 }
 
