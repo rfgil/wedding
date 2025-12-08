@@ -4,8 +4,8 @@ ref_ratio=""
 
 
 files=(
-    casa_gaeiras.png
-    santuario.png
+    ../gaeiras.png
+    ../santuario.jpg
     # image1.png
     # image2.png
     # image3.png
