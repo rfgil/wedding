@@ -25,8 +25,6 @@ html {
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background: var(--color-cream);
     margin: 0;
     padding: 0;
 }
@@ -86,9 +84,10 @@ li {
 
 li:before {
     content: "•";
+    font-weight: bold;
     position: absolute;
     left: 0;
-    color: var(--color-heading);
+    /* color: var(--color-heading); */
 }
 
 .content {
@@ -357,12 +356,16 @@ span {
 }
 
 /* Informações */
-.info {
-    background-image: url('assets/flor_rosa.png'), url('assets/flor_vermelha.png');
-    background-position: top 50px right 50px, top right;
-    /* calc(50% - 125px) -400px, calc(50% + 125px) -400px; */
+.section.info {
+    background-image: url('assets/flor_vermelha.png'), url('assets/flor_rosa.png');
+    background-position: top -125px right -75px, top -100px right 25px;
+    /* background-position: top 50px right 50px, top right; */
     background-repeat: no-repeat, no-repeat;
-    background-size: 200px, 200px;
+    background-size: 280px, 280px;
+    background-origin: border-box;
+}
+
+.info {
 
     h2 {
         color: black;
