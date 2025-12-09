@@ -1,5 +1,5 @@
 Next steps:
-- Nav bar com animação com amplemarket.com
+- Nav bar com animação com amplemarket.com, e com a selected section a acompanhar a seção onde estamos
 - navigation refs with #
 
 

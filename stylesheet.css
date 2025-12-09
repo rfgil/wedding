@@ -24,9 +24,10 @@ html {
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    line-height: 1.6;
+    /* line-height: 1.6; */
     margin: 0;
     padding: 0;
+    min-width: 320px;
 }
 
 
@@ -100,6 +101,7 @@ li:before {
 .content {
     display: flex;
     flex-direction: column;
+    min-width: 450px;
     max-width: 1200px;
     padding: 4rem 3rem;
     width: 100%;
@@ -158,7 +160,8 @@ a.button {
     background-color: var(--color-heading);
     color: white;
 
-    width: 450px;
+    max-width: 650px;
+    min-width: 250px;
     text-transform: uppercase;
     text-align: center;
     font-weight: normal;
@@ -177,87 +180,100 @@ span {
 }
 
 /* Tablet styles */
-@media (max-width: 768px) {
-    .container {
-        padding: 1.5rem;
-    }
-
-    .section {
-        padding: 3rem 1.5rem;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    p, span {
-        font-size: 1.1rem;
-    }
-
-    a {
-        font-size: 1rem;
-        padding: 0.6rem 1.2rem;
-    }
-}
+/* @media (max-width: 768px) { */
+/*     .container { */
+/*         padding: 1.5rem; */
+/*     } */
+/**/
+/*     .section { */
+/*         padding: 3rem 1.5rem; */
+/*     } */
+/**/
+/*     h1 { */
+/*         font-size: 2rem; */
+/*     } */
+/**/
+/*     h2 { */
+/*         font-size: 1.5rem; */
+/*     } */
+/**/
+/*     p, span { */
+/*         font-size: 1.1rem; */
+/*     } */
+/**/
+/*     a { */
+/*         font-size: 1rem; */
+/*         padding: 0.6rem 1.2rem; */
+/*     } */
+/* } */
 
 /* Mobile styles */
-@media (max-width: 480px) {
-    .container {
-        padding: 1rem;
-    }
-
-    .section {
-        padding: 2rem 1rem;
-    }
-
-    h1 {
-        font-size: 1.75rem;
-        margin-bottom: 0.75rem;
-    }
-
-    h2 {
-        font-size: 1.25rem;
-        margin-bottom: 0.75rem;
-    }
-
-    p, span {
-        font-size: 1rem;
-    }
-
-    a {
-        font-size: 0.95rem;
-        padding: 0.6rem 1rem;
-        margin: 1rem 0;
-    }
-}
+/* @media (max-width: 480px) { */
+/*     .container { */
+/*         padding: 1rem; */
+/*     } */
+/**/
+/*     .section { */
+/*         padding: 2rem 1rem; */
+/*     } */
+/**/
+/*     h1 { */
+/*         font-size: 1.75rem; */
+/*         margin-bottom: 0.75rem; */
+/*     } */
+/**/
+/*     h2 { */
+/*         font-size: 1.25rem; */
+/*         margin-bottom: 0.75rem; */
+/*     } */
+/**/
+/*     p, span { */
+/*         font-size: 1rem; */
+/*     } */
+/**/
+/*     a { */
+/*         font-size: 0.95rem; */
+/*         padding: 0.6rem 1rem; */
+/*         margin: 1rem 0; */
+/*     } */
+/* } */
 
 /* Sections */
 /* Hero section */
 .hero  {
-    justify-content: space-between;
     min-height: 100vh;
+    justify-content: space-between;
 
-    background-image: url('assets/flor_rosa.png'), url('assets/flor_vermelha.png');
-    background-position: calc(50% - 125px) -400px, calc(50% + 125px) -400px;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 600px, 600px;
-
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* position: relative; */
+    /* text-align: center; */
 
     .content {
+        min-height: 100vh;
         align-items: center;
+        text-align: center;
         padding: 0 3rem;
+        /* height: 100%; */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
+
+    .flowers {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 250px;
+        width: 100%;
+
+        background-image: url('assets/flor_rosa.png'), url('assets/flor_vermelha.png');
+        background-position: calc(50% - 125px) -400px, calc(50% + 125px) -400px;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 600px, 600px;
+    }
+
 
     .subtitle {
         font-size: 1.75rem;
@@ -266,23 +282,27 @@ span {
     }
 
     .bottom {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        padding: 0 3rem 5rem 3rem;
+        min-height: 250px;
+        padding-bottom: 5rem;
+        /* position: absolute; */
+        /* bottom: 0; */
+        /* left: 0; */
+        /* right: 0; */
+        /* width: 100%; */
+        /* padding: 0 3rem 5rem 3rem; */
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 1200px;
-        margin: 0 auto;
+        width: 100%;
+        justify-content: flex-end;
+        /* max-width: 1200px; */
+        /* margin: 0 auto; */
     }
 
     .location {
         font-size: 1.06rem;
         /* font-weight: bold; */
-        margin-top: auto;
+        /* margin-top: auto; */
 
         width: 100%;
         display: flex;
@@ -314,7 +334,6 @@ span {
 
     .text {
         flex: 2;
-        min-width: 300px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -353,7 +372,6 @@ span {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
-        min-width: 300px;
 
         img {
             width: 100%;
@@ -401,9 +419,7 @@ span {
     .info-grid {
         display: flex;
         flex-direction: row;
-
-        /* display: grid; */
-        /* grid-template-columns: repeat(2, 1fr); */
+        align-items: center;
         gap: 3rem;
         width: 100%;
         max-width: 1200px;
@@ -837,5 +853,30 @@ span {
         padding: 0.65rem 0.85rem;
         padding-right: 2.5rem;
         background-size: 1em;
+    }
+}
+
+@media (max-width: 340px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .hero > .bottom {
+        padding: 0 1.5rem 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    /* .hero > .bottom { */
+    /*     padding: 0 1.5rem 2rem 1.5rem; */
+    /* } */
+
+    .content {
+        padding: 2rem 1.5rem;
+        min-width: auto;
     }
 }
