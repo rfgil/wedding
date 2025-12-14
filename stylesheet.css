@@ -278,11 +278,11 @@ span {
         height: 25vh;
         width: 100%;
 
-        background-image: url('assets/flor_rosa.png'), url('assets/flor_vermelha.png');
+        /* background-image: url('assets/flor_rosa.png'), url('assets/flor_vermelha.png'); */
         /* background-position: calc(50% - 125px) -400px, calc(50% + 125px) -400px; */
-        background-position: 25% -25%, 25% -25%;
-        background-repeat: no-repeat, no-repeat;
-        background-size: 100%, 100%;
+        /* background-position: 25% -25%, 25% -25%; */
+        /* background-repeat: no-repeat, no-repeat; */
+        /* background-size: 100%, 100%; */
     }
 
 
