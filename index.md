@@ -2,6 +2,11 @@ Next steps:
 - Nav bar com animação com amplemarket.com, e com a selected section a acompanhar a seção onde estamos
 - navigation refs with #
 
+- https://www.rileygrey.com/wedding-website-examples?utm_source=chatgpt.com
+Gostei do Coastal Chic, especialmente do menu aparecer depois do convite
+
+https://www.transparenttextures.com/?utm_source=chatgpt.com
+
 
 
 

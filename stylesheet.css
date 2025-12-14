@@ -20,6 +20,9 @@ html {
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: 'Abhaya Libre';
+    /* background: #ffffff url('white-gypsum-wall.jpg') repeat; */
+    /* background-color: #009440; */
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 body {
@@ -112,6 +115,13 @@ li:before {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* background-image: url("https://www.transparenttextures.com/patterns/cardboard-flat.png"); */
+    /* background-color: #00ba66; */
+    /* background-image: url("https://www.transparenttextures.com/patterns/church.png"); */
+    /* background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png"); <- vencedor */
+    /* background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png"); <- vencedor #2 */
+    /* background-image: url("https://www.transparenttextures.com/patterns/farmer.png"); */
+    background-image: url("https://www.transparenttextures.com/patterns/first-aid-kit.png");
 }
 
 .section:nth-child(even) {
@@ -265,13 +275,14 @@ span {
         top: 0;
         left: 0;
         right: 0;
-        height: 250px;
+        height: 25vh;
         width: 100%;
 
         background-image: url('assets/flor_rosa.png'), url('assets/flor_vermelha.png');
-        background-position: calc(50% - 125px) -400px, calc(50% + 125px) -400px;
+        /* background-position: calc(50% - 125px) -400px, calc(50% + 125px) -400px; */
+        background-position: 25% -25%, 25% -25%;
         background-repeat: no-repeat, no-repeat;
-        background-size: 600px, 600px;
+        background-size: 100%, 100%;
     }
 
 
