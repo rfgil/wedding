@@ -211,11 +211,20 @@ li:before {
     display: flex;
     list-style: none;
     gap: 40px;
+    margin: 0;
+    padding: 0;
     align-items: center;
 }
 
 .nav-item {
     position: relative;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.nav-item:before {
+    content: none;
 }
 
 .nav-link {
@@ -495,6 +504,10 @@ li:before {
     align-items: center;
     padding: 80px 0;
     position: relative;
+}
+
+.section.info {
+    padding: 50px 0;
 }
 
 /* Section background colors matching experimental */
@@ -795,7 +808,7 @@ span {
 }
 
 .flower-img {
-    width: 460px;
+    width: 515px;
     height: auto;
     display: block;
 }
@@ -849,7 +862,7 @@ span {
     }
 
     .flower-img {
-        width: 320px;
+        width: 360px;
     }
 
     .flower-top {
@@ -867,7 +880,7 @@ span {
     }
 
     .flower-img {
-        width: 240px;
+        width: 270px;
     }
 
     .flower-top {
@@ -894,7 +907,7 @@ span {
     }
 
     .flower-img {
-        width: 170px;
+        width: 190px;
     }
 
     .flower-top {
@@ -931,6 +944,7 @@ span {
 .beginning .img img {
     width: 100%;
     height: auto;
+    border-radius: 6px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -943,7 +957,7 @@ span {
 
 .beginning .text p {
     font-family: var(--font-body);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 300; /* Montserrat Light */
     margin-bottom: 20px;
     line-height: 1.8; /* Good readability */
@@ -974,7 +988,7 @@ span {
     }
 
     .beginning .text p {
-        font-size: 1rem;
+        font-size: 0.95rem;
         line-height: 1.7;
     }
 }
@@ -985,7 +999,7 @@ span {
     }
 
     .beginning .text p {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
         line-height: 1.6;
     }
 }
@@ -993,6 +1007,8 @@ span {
 .highlight {
     color: var(--color-heading);
     font-weight: 600;
+    display: inline;
+    font-size: inherit;
 }
 
 /* Honeymoon section (keeping for later) */
@@ -1022,19 +1038,6 @@ span {
         justify-content: center;
         gap: 10px;
         text-align: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .beginning, .honeymoon {
-        .flexbox {
-            flex-direction: column;
-            gap: 2rem;
-        }
-
-        .img {
-            max-width: 100%;
-        }
     }
 }
 
@@ -1121,6 +1124,7 @@ span {
         align-self: center;
         margin-top: 40px;
         font-style: italic;
+        font-size: 0.85rem;
         max-width: 800px;
         margin-left: auto;
         margin-right: auto;
@@ -1229,22 +1233,22 @@ span {
 
 .info-flower {
     position: absolute;
-    width: 20vw;
-    min-width: 150px;
-    max-width: 400px;
+    width: 25vw;
+    min-width: 200px;
+    max-width: 500px;
     height: auto;
 }
 
 .info-flower-1 {
     top: 0;
     right: 0;
-    animation: floatCute1 8s ease-in-out infinite alternate;
+    animation: floatCute1 5s ease-in-out infinite alternate;
 }
 
 .info-flower-2 {
     top: 30px;
     right: -60px;
-    animation: floatCute2 10s ease-in-out infinite alternate;
+    animation: floatCute2 6s ease-in-out infinite alternate;
 }
 
 @media (max-width: 768px) {
@@ -1279,7 +1283,7 @@ span {
     }
 
     .gifts-intro {
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin-bottom: 40px;
         line-height: 1.8;
         font-weight: 300;
@@ -1403,60 +1407,60 @@ span {
    =========================== */
 .contacts {
     text-align: center;
+}
 
-    h2 {
-        text-align: center;
-        margin-bottom: 40px;
-    }
+.contacts h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
 
-    .contacts-photo {
-        margin-bottom: 40px;
-    }
+.contacts .contacts-photo {
+    margin-bottom: 40px;
+}
 
-    .contacts-photo img {
-        width: 300px;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 0;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    }
+.contacts .contacts-photo img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
 
-    .contacts-content {
-        display: flex;
-        justify-content: center;
-        gap: 80px;
-        margin: 40px 0;
-        flex-wrap: wrap;
-    }
+.contacts .contacts-content {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
 
-    .contact-person {
-        text-align: center;
-    }
+.contacts .contact-person {
+    text-align: center;
+}
 
-    .contact-name {
-        font-family: var(--font-heading);
-        font-size: 1.8rem;
-        color: var(--color-heading);
-        margin-bottom: 10px;
-    }
+.contacts .contact-name {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--color-heading);
+    margin-bottom: 10px;
+}
 
-    .contact-phone {
-        font-size: 1.2rem;
-        color: var(--text-dark);
-        text-decoration: none;
-        font-weight: 400;
-    }
+.contacts .contact-phone {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 400;
+}
 
-    .contact-phone:hover {
-        color: var(--color-heading);
-    }
+.contacts .contact-phone:hover {
+    color: var(--color-heading);
+}
 
-    .contacts-note {
-        font-size: 1rem;
-        font-style: italic;
-        margin-top: 30px;
-        font-weight: 300;
-    }
+.contacts .contacts-note {
+    font-size: 1rem;
+    font-style: italic;
+    margin-top: 30px;
+    font-weight: 300;
 }
 
 @media (max-width: 768px) {
@@ -1493,22 +1497,19 @@ span {
 /* ===========================
    RSVP Form Section
    =========================== */
-.rsvp {
-    h2 {
-        text-align: center;
-        margin-bottom: 1.5rem;
-    }
+.rsvp h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
 
-    .intro {
-        font-family: var(--font-body);
-        font-size: 1.1rem;
-        font-weight: 300;
-        margin-bottom: 3rem;
-        max-width: 800px;
-        line-height: 1.8;
-        text-align: center;
-    }
-
+.rsvp .intro {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    line-height: 1.8;
+    text-align: center;
 }
 
 .rsvp-form {
@@ -1658,7 +1659,7 @@ span {
 /* Tablet Responsive (max-width: 768px) */
 @media (max-width: 768px) {
     .rsvp .intro {
-        font-size: 1rem;
+        font-size: 0.95rem;
         margin-bottom: 2.5rem;
     }
 
@@ -1684,7 +1685,7 @@ span {
     }
 
     .rsvp .intro {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
         margin-bottom: 2rem;
     }
 
