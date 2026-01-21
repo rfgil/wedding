@@ -5,28 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mariana & Rafael - Vamos Casar!</title>
     <link rel="stylesheet" href="stylesheet.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script src="rsvp.js"></script>
-    <div class="section hero">
-        <div class="main">
-            <div class="flowers">
-                <img class="flower-left" src="assets/flor_rosa.png">
-                <img class="flower-right" src="assets/flor_vermelha.png">
-            </div>
-            <h1>Mariana & Rafael</h1>
-            <div class="location">
-                <p><strong>3 de Outubro de 2026</strong></p>
-                <p><strong>Gaeiras, Óbidos</strong></p>
-            </div>
-            <p class="subtitle">Vamos Casar!</p>
-            <a class="button" href="#rsvp">Confirmar Presença</a>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">M&R</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#story" class="nav-link">História</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Fotos</a></li>
+                <li class="nav-item"><a href="#locations" class="nav-link">O Dia</a></li>
+                <li class="nav-item"><a href="#info" class="nav-link">Informações</a></li>
+                <li class="nav-item"><a href="#gifts" class="nav-link">Presentes</a></li>
+                <li class="nav-item"><a href="#contacts" class="nav-link">Contactos</a></li>
+            </ul>
+            <a href="#rsvp" class="nav-cta">RSVP</a>
         </div>
-    </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section hero" id="hero">
+        <div class="flower flower-top">
+            <img src="assets/flor-escura.png" alt="Flor decorativa" class="flower-img">
+        </div>
+        <div class="hero-content">
+            <h1 class="names">Mariana & Rafael</h1>
+            <p class="wedding-tagline">3 DE OUTUBRO DE 2026, ÓBIDOS</p>
+            <a href="#rsvp" class="rsvp-button">CONFIRMAR PRESENÇA</a>
+        </div>
+        <div class="flower flower-bottom">
+            <img src="assets/flor-clara.png" alt="Flor decorativa" class="flower-img">
+        </div>
+    </section>
 
 <!-- # Home -->
 <!-- # A Nossa história -->
@@ -37,110 +50,235 @@
 <!-- # Confirmar presença -->
 <!-- # Contactos -->
 
-    <div class="section beginning">
+    <!-- Como tudo começou -->
+    <section class="section beginning" id="story">
         <div class="content">
+            <h2>COMO TUDO COMEÇOU</h2>
             <div class="flexbox">
                 <div class="img" style="filter: grayscale(100%);">
                     <img src="assets/como_comecou.jpg">
                 </div>
                 <div class="text">
-                    <h2>Como Tudo Começou</h2>
-                    <p>Conhecemo-nos em 2018, na Serra de Sintra, durante a semana de acolhimento do nosso primeiro trabalho — entre acácias teimosas e uma conversa inesperada sobre xilema e floema.</p>
-                    <p>O verdadeiro clique aconteceu na cozinha, enquanto preparávamos o almoço da nossa equipa (pataniscas!). Desde aí, nunca mais nos largámos.</p>
-                    <p>Já vivemos separados por 8 horas, entre Vancouver e Luanda, mas hoje partilhamos a mesma casa, o mesmo humor e uma vida cheia de amor, música e boa comida!</p>
+                    <p>Conhecemo-nos em <span class="highlight">2018</span>, na Serra de Sintra, durante a semana de acolhimento do nosso primeiro trabalho — entre <span class="highlight">acácias teimosas</span> e uma conversa inesperada sobre <span class="highlight">xilema e floema</span>.</p>
+                    <p>O verdadeiro clique aconteceu na cozinha, enquanto preparávamos o almoço da nossa equipa (<span class="highlight">pataniscas!</span>). Desde aí, nunca mais nos largámos.</p>
+                    <p>Já vivemos separados por <span class="highlight">8 horas</span>, entre Vancouver e Luanda, mas hoje partilhamos a mesma casa, o mesmo humor e uma vida cheia de <span class="highlight">amor</span>, <span class="highlight">música</span> e <span class="highlight">boa comida!</span></p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="images">
-        <img src="assets/image1.png" alt="Mariana & Rafael">
-        <img src="assets/image2.png" alt="Mariana & Rafael">
-        <img src="assets/image3.png" alt="Mariana & Rafael">
-        <img src="assets/image4.png" alt="Mariana & Rafael">
-        <img src="assets/image5.png" alt="Mariana & Rafael">
-        <img src="assets/image6.png" alt="Mariana & Rafael">
-        <img src="assets/image7.png" alt="Mariana & Rafael">
-        <img src="assets/image8.png" alt="Mariana & Rafael">
-        <img src="assets/image9.png" alt="Mariana & Rafael">
-        <img src="assets/image10.png" alt="Mariana & Rafael">
-    </div>
+    <!-- Photo Gallery -->
+    <section class="section images" id="gallery">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="assets/image1.png" alt="Mariana e Rafael">
+                </div>
+                <div class="flip-card-back">
+                    <p class="photo-date">2022</p>
+                    <p class="photo-location">Caminho De Santiago</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="assets/image2.png" alt="Mariana e Rafael">
+                </div>
+                <div class="flip-card-back">
+                    <p class="photo-date">2020</p>
+                    <p class="photo-location">Gerês</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="assets/image3.png" alt="Mariana e Rafael">
+                </div>
+                <div class="flip-card-back">
+                    <p class="photo-date">2025</p>
+                    <p class="photo-location">Rio De Janeiro</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="assets/image4.png" alt="Mariana e Rafael">
+                </div>
+                <div class="flip-card-back">
+                    <p class="photo-date">2019</p>
+                    <p class="photo-location">Marvão</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="assets/image5.png" alt="Mariana e Rafael">
+                </div>
+                <div class="flip-card-back">
+                    <p class="photo-date">2021</p>
+                    <p class="photo-location">A Caminho Da Bélgica</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="assets/image6.png" alt="Mariana e Rafael">
+                </div>
+                <div class="flip-card-back">
+                    <p class="photo-date">2023</p>
+                    <p class="photo-location">Sicília</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="assets/image7.png" alt="Mariana e Rafael">
+                </div>
+                <div class="flip-card-back">
+                    <p class="photo-date">2024</p>
+                    <p class="photo-location">São Francisco</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="assets/image8.png" alt="Mariana e Rafael">
+                </div>
+                <div class="flip-card-back">
+                    <p class="photo-date">2024</p>
+                    <p class="photo-location">Feira De Maio</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="assets/image9.png" alt="Mariana e Rafael">
+                </div>
+                <div class="flip-card-back">
+                    <p class="photo-date">2024</p>
+                    <p class="photo-location">Yosemite</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="assets/image10.png" alt="Mariana e Rafael">
+                </div>
+                <div class="flip-card-back">
+                    <p class="photo-date">2023</p>
+                    <p class="photo-location">Lisboa</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-    <div class="section details">
+    <!-- O Dia -->
+    <section class="section details" id="locations">
         <div class="content">
+            <h2>O DIA</h2>
             <div class="events">
                 <div class="event">
-                    <h2>Missa</h2>
+                    <h3>MISSA</h3>
                     <img src="assets/santuario.jpg" alt="Santuário do Senhor Jesus da Pedra">
                     <div>
-                        <a>Santuário do Senhor Jesus da Pedra, Óbidos</a>
+                        <a href="https://maps.google.com" target="_blank" class="location-link-discrete">Santuário do Senhor Jesus da Pedra, Óbidos</a>
                         <p class="time">15:00</p>
                     </div>
                 </div>
                 <div class="event">
-                    <h2>Cocktail & Festa</h2>
+                    <h3>COCKTAIL & FESTA</h3>
                     <img src="assets/gaeiras.png" alt="Casa das Gaeiras">
                     <div>
-                        <a class="body">Casa das Gaeiras, Óbidos</a>
+                        <a href="https://maps.google.com" target="_blank" class="location-link-discrete">Casa das Gaeiras, Óbidos</a>
                         <p class="time">17:00</p>
                     </div>
                 </div>
             </div>
             <p class="note">Ambas localizações têm estacionamento gratuito suficiente para todos e um fácil acesso para táxis ou Uber.</p>
         </div>
-    </div>
+    </section>
 
-    <div class="section info">
+    <!-- Informações -->
+    <section class="section info" id="info">
+        <div class="info-flowers">
+            <img src="assets/flor-clara.png" alt="Flor decorativa" class="info-flower info-flower-1">
+            <img src="assets/flor-escura.png" alt="Flor decorativa" class="info-flower info-flower-2">
+        </div>
         <div class="content">
-            <h2>Informações</h2>
+            <h2>INFORMAÇÕES</h2>
             <div class="info-grid">
-                <div class="info-item">
-                    <h4>Dress Code</h4>
-                    <p>O nosso casamento será um <strong>evento formal</strong>. O cocktail, jantar e festa terão lugar num jardim relvado (com tenda), por isso recomendamos que evitem saltos agulha.</p>
-
-                    <h4>Deslocações</h4>
-                    <p>Nas Caldas da Rainha existem táxis e Uber disponíveis, que podem ser usados para chegar e sair do local da festa.</p>
-                    <p>Para quem preferir levar carro, haverá lugares de estacionamento para todos os convidados dentro do espaço.</p>
-                </div>
-                <div class="info-item">
-                    <h4>Onde Ficar</h4>
-                    <p>Para quem quiser aproveitar o fim de semana pela região, deixamos algumas sugestões de alojamento nas proximidades de Óbidos:</p>
-                    <ul>
-                        <li>The Literary Man</li>
-                        <li>Hotel Casa Senhoras Rainhas</li>
-                        <li>Hotel Vila D'Óbidos</li>
-                        <li>Pousada Vila Óbidos</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section honeymoon">
-        <div class="content">
-            <div class="flexbox" >
-                <div class="img">
-                    <img src="assets/indonesia.png" alt="Indonésia">
-                </div>
-                <div class="text" style="text-align: left; align-items: flex-start;">
-                    <div>
-                    <h3 style="margin-bottom: 0">Ajuda-nos a chegar à Indonésia</h3>
-                    <h3 style="margin-top: 0">(e voltar!)</h3>
+                <div class="info-column-left">
+                    <div class="info-block">
+                        <h3 class="info-title">Dress Code</h3>
+                        <p>O nosso casamento será um <strong>evento formal</strong>. O cocktail, jantar e festa terão lugar num <strong>jardim relvado (com tenda)</strong>, por isso recomendamos que evitem <strong>saltos agulha</strong>.</p>
                     </div>
-                    <p>Escolhemos a <strong>Indonésia</strong> como destino de Lua-de-Mel onde planeamos viajar durante o mês de Outubro.</p>
-                    <p>Se quiserem contribuir para a nossa viagem, deixamos em baixo as nossas informações.</p>
-                    <p>Para que possamos agradecer os presentes enviados, pedimos a todos que escrevam o vosso nome e email na descrição da transferência.</p>
-                    <p class="iban">IBAN: PT50 xxx xxx xxxxxxxxxxx</p>
+                    <div class="info-block">
+                        <h3 class="info-title">Deslocações</h3>
+                        <p>Nas Caldas da Rainha existem <strong>táxis e Uber disponíveis</strong>, que podem ser usados para chegar e sair do local da festa.</p>
+                        <p>Para quem preferir levar carro, haverá <strong>lugares de estacionamento</strong> para todos os convidados dentro do espaço.</p>
+                    </div>
+                </div>
+                <div class="info-column-right">
+                    <div class="info-block">
+                        <h3 class="info-title">Onde Ficar</h3>
+                        <p>Para quem quiser aproveitar o fim de semana pela região, deixamos algumas sugestões de alojamento nas proximidades de Óbidos:</p>
+                        <ul class="info-list">
+                            <li><a href="https://www.theliteraryman.pt" target="_blank">The Literary Man</a></li>
+                            <li><a href="https://www.booking.com" target="_blank">Hotel Casa Senhoras Rainhas</a></li>
+                            <li><a href="https://www.booking.com" target="_blank">Hotel Vila D'Óbidos</a></li>
+                            <li><a href="https://www.booking.com" target="_blank">Pousada Vila Óbidos</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="section rsvp" id="rsvp">
+    <!-- Presentes -->
+    <section class="section gifts" id="gifts">
         <div class="content">
-            <h1>Confirmação de Presença – Casamento de [Vossos Nomes]</h1>
-            <p class="intro">Por favor, confirmem a vossa presença até [Data]. A vossa resposta ajuda-nos a organizar tudo com carinho para que este dia seja inesquecível!</p>
+            <h2>PRESENTES</h2>
+            <div class="gifts-layout">
+                <div class="gifts-content">
+                    <p class="gifts-intro">
+                        A vossa presença é o nosso maior presente! Se ainda assim desejarem contribuir
+                        para a nossa viagem de lua de mel, deixamos em baixo as nossas informações:
+                    </p>
+                    <div class="iban-section">
+                        <p class="iban-label">IBAN</p>
+                        <div class="iban-display">
+                            <span id="iban" class="iban-number">PT50 0000 0000 0000 0000 0000 0</span>
+                            <button id="copy-btn" class="iban-copy-link">copiar</button>
+                        </div>
+                        <p class="iban-note">ou, em alternativa, podem enviar por <strong>MB WAY</strong></p>
+                        <p class="iban-important">
+                            Por favor, não se esqueçam de adicionar o vosso <strong>nome e email</strong>
+                            na descrição da transferência para podermos agradecer!
+                        </p>
+                    </div>
+                </div>
+                <div class="gifts-image">
+                    <img src="assets/indonesia.png" alt="Presentes" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP -->
+    <section class="section rsvp" id="rsvp">
+        <div class="content">
+            <h2>RSVP</h2>
+            <p class="intro">Por favor, confirmem a vossa presença até <strong>1 de Agosto, 2026</strong>. A vossa resposta ajuda-nos a organizar tudo com carinho para que este dia seja inesquecível!</p>
 
             <form class="rsvp-form">
                 <!-- Email -->
@@ -193,22 +331,32 @@
         </div>
     </div>
 
-    <div class="section contacts">
+    <!-- Contactos -->
+    <section class="section contacts" id="contacts">
         <div class="content">
-            <h1 style="color: black">Contactos</h1>
-            <img src="assets/contactos.jpg" alt="Mariana & Rafael">
-            <div class="contact-grid">
-                <div class="contact-item">
-                    <p>Mariana</p>
-                    <p>+351 919231563</p>
+            <div class="contacts-photo">
+                <img src="assets/contactos.jpg" alt="Mariana e Rafael">
+            </div>
+            <h2>CONTACTOS</h2>
+            <div class="contacts-content">
+                <div class="contact-person">
+                    <p class="contact-name">Mariana</p>
+                    <a href="tel:+351919231563" class="contact-phone">+351 919 231 563</a>
                 </div>
-                <a class="button" href="#rsvp">Confirmar Presença</a>
-                <div class="contact-item">
-                    <p>Rafael</p>
-                    <p>+351 913673493</p>
+                <div class="contact-person">
+                    <p class="contact-name">Rafael</p>
+                    <a href="tel:+351913673493" class="contact-phone">+351 913 673 493</a>
                 </div>
             </div>
+            <p class="contacts-note">Para qualquer questão, não hesitem em contactar-nos!</p>
         </div>
-    </div>
+    </section>
+
+    <footer class="footer">
+        <p>Com amor, Mariana & Rafael</p>
+        <p class="footer-date">3 de Outubro, 2026</p>
+    </footer>
+
+    <script src="wedding.js"></script>
 </body>
 </html>
