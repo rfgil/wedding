@@ -1403,34 +1403,63 @@ span {
 }
 
 /* ===========================
-   Contacts Section
+   Contacts Section - Full-Width Banner
    =========================== */
 .contacts {
-    text-align: center;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch !important;
+    overflow: visible !important;
 }
 
-.contacts h2 {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
+/* Full-Width Cinematic Banner Placeholder */
 .contacts .contacts-photo {
-    margin-bottom: 40px;
-}
-
-.contacts .contacts-photo img {
-    width: 300px;
+    width: 100%;
+    min-width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    margin: 0;
     height: 300px;
-    object-fit: cover;
-    border-radius: 0;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #e8e6e1 0%, #d4d2cd 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.contacts .contacts-photo::after {
+    content: '[Image Placeholder]';
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 300;
+    color: #999;
+    letter-spacing: 1px;
+}
+
+/* Centered Info Container - Better Spacing */
+.contacts .contacts-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+/* Title - More Space Below */
+.contacts h2 {
+    margin: 0 0 3rem 0;
+}
+
+/* Contact Grid - Centered */
 .contacts .contacts-content {
     display: flex;
     justify-content: center;
-    gap: 80px;
-    margin: 40px 0;
+    gap: 100px;
+    margin: 0;
     flex-wrap: wrap;
 }
 
@@ -1440,58 +1469,135 @@ span {
 
 .contacts .contact-name {
     font-family: var(--font-heading);
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: var(--color-heading);
     margin-bottom: 10px;
+    font-weight: 400;
 }
 
 .contacts .contact-phone {
-    font-size: 1.2rem;
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 300;
     color: var(--text-dark);
     text-decoration: none;
-    font-weight: 400;
+    transition: color 0.3s ease;
 }
 
 .contacts .contact-phone:hover {
     color: var(--color-heading);
 }
 
-.contacts .contacts-note {
-    font-size: 1rem;
-    font-style: italic;
-    margin-top: 30px;
-    font-weight: 300;
+/* Responsive */
+@media (max-width: 768px) {
+    .contacts .contacts-photo {
+        height: 250px;
+    }
+
+    .contacts .contacts-info {
+        padding: 3rem 1.5rem;
+    }
+
+    .contacts h2 {
+        margin-bottom: 2.5rem;
+    }
+
+    .contacts .contacts-content {
+        gap: 60px;
+    }
+
+    .contacts .contact-name {
+        font-size: 1.7rem;
+    }
+
+    .contacts .contact-phone {
+        font-size: 1rem;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+    .contacts .contacts-photo {
+        height: 200px;
+    }
+
+    .contacts .contacts-photo::after {
+        font-size: 0.9rem;
+    }
+
+    .contacts .contacts-info {
+        padding: 2.5rem 1rem;
+    }
+
+    .contacts h2 {
+        margin-bottom: 2rem;
+    }
+
     .contacts .contacts-content {
         gap: 40px;
     }
 
-    .contacts .contacts-photo img {
-        max-width: 100%;
+    .contacts .contact-name {
+        font-size: 1.5rem;
     }
 }
 
 /* ===========================
-   Footer
+   Footer - Red Banner Design
    =========================== */
 .footer {
     background-color: var(--color-heading);
     color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 3rem 1rem;
+    width: 100%;
 }
 
-.footer p {
-    margin-bottom: 10px;
+.footer-message {
     font-family: var(--font-body);
+    font-size: 0.9rem;
     font-weight: 300;
+    font-style: italic;
+    margin: 0 0 1rem 0;
+    opacity: 0.95;
 }
 
 .footer-date {
-    font-size: 1.2rem;
-    font-weight: 300;
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 2.5rem 1rem;
+    }
+
+    .footer-message {
+        font-size: 0.85rem;
+    }
+
+    .footer-date {
+        font-size: 1.1rem;
+        letter-spacing: 1.5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 2rem 1rem;
+    }
+
+    .footer-message {
+        font-size: 0.8rem;
+    }
+
+    .footer-date {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
 }
 
 /* ===========================
