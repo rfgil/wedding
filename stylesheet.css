@@ -259,6 +259,10 @@ span {
     /* position: relative; */
     /* text-align: center; */
 
+    h1 {
+        margin-top: 0; 
+    }
+
     .content {
         min-height: 100vh;
         align-items: center;
@@ -270,19 +274,27 @@ span {
         flex-direction: column;
     }
 
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
     .flowers {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
         height: 25vh;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
 
-        /* background-image: url('assets/flor_rosa.png'), url('assets/flor_vermelha.png'); */
-        /* background-position: calc(50% - 125px) -400px, calc(50% + 125px) -400px; */
-        /* background-position: 25% -25%, 25% -25%; */
-        /* background-repeat: no-repeat, no-repeat; */
-        /* background-size: 100%, 100%; */
+    .flowers img {
+        height: 100%;
+        width: auto;
+        object-fit: contain;
     }
 
 
@@ -311,14 +323,20 @@ span {
     }
 
     .location {
-        font-size: 1.06rem;
+        font-size: 1.53rem;
+        /* font-family: 'the-seasons'; */
         /* font-weight: bold; */
         /* margin-top: auto; */
 
         width: 100%;
         display: flex;
         align-items: center;
+
         justify-content: space-between;
+
+        p {
+            font-family: 'the-seasons', 'The Seasons', Georgia, serif;
+        }
     }
 
 }
