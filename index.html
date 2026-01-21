@@ -277,9 +277,10 @@
     <section class="section rsvp" id="rsvp">
         <div class="content">
             <h2>RSVP</h2>
-            <p class="intro">Por favor, confirmem a vossa presença até <strong>1 de Agosto, 2026</strong>. A vossa resposta ajuda-nos a organizar tudo com carinho para que este dia seja inesquecível!</p>
+            <p class="intro">Por favor, confirmem a vossa presença até <strong>1 de Agosto, 2026</strong>.</p>
 
-            <form class="rsvp-form">
+            <div class="rsvp-card">
+                <form class="rsvp-form">
                 <!-- Email -->
                 <div class="form-group">
                     <label for="email">Email *</label>
@@ -308,7 +309,7 @@
                 </div>
 
                 <!-- Number of Guests -->
-                <div class="form-group">
+                <div class="form-group" id="guest-count-group">
                     <label for="guest-count">Número de Convidados *</label>
                     <p class="helper-text">Incluindo a pessoa que preenche este formulário (máximo 10)</p>
                     <input type="number" id="guest-count" name="guest-count" min="1" max="10" required>
@@ -318,7 +319,7 @@
                 <div id="guest-fields-container"></div>
 
                 <!-- Song Request -->
-                <div class="form-group">
+                <div class="form-group" id="song-group">
                     <label for="song">Sugestão de Música para a Pista de Dança 💃🕺</label>
                     <p class="helper-text">Opcional: Sugira uma música que gostaria de ouvir na festa!</p>
                     <input type="text" id="song" name="song" placeholder="Nome da música e artista...">
@@ -327,8 +328,9 @@
                 <!-- Submit Button -->
                 <button type="submit" class="submit-button">Enviar Confirmação</button>
             </form>
+            </div>
         </div>
-    </div>
+    </section>
 
     <!-- Contactos -->
     <section class="section contacts" id="contacts">

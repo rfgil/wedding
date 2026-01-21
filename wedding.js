@@ -196,6 +196,9 @@ document.addEventListener('DOMContentLoaded', function() {
         elements.guestCountInput = document.querySelector(CONFIG.selectors.guestCountInput);
         elements.guestContainer = document.querySelector(CONFIG.selectors.guestContainer);
         elements.attendanceRadios = document.querySelectorAll(CONFIG.selectors.attendanceRadio);
+        elements.guestCountGroup = document.getElementById('guest-count-group');
+        elements.songGroup = document.getElementById('song-group');
+        elements.songInput = document.getElementById('song');
 
         if (!elements.form || !elements.guestCountInput || !elements.guestContainer) {
             console.error('Required form elements not found');
@@ -342,6 +345,10 @@ document.addEventListener('DOMContentLoaded', function() {
         state.isAttending = isAttending;
 
         if (isAttending) {
+            // Show guest count and song fields
+            elements.guestCountGroup.style.display = 'flex';
+            elements.songGroup.style.display = 'flex';
+
             elements.guestCountInput.disabled = false;
             elements.guestCountInput.required = true;
 
@@ -350,9 +357,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 updateGuestFields(count);
             }
         } else {
+            // Hide guest count and song fields
+            elements.guestCountGroup.style.display = 'none';
+            elements.songGroup.style.display = 'none';
+
             elements.guestCountInput.disabled = true;
             elements.guestCountInput.required = false;
             elements.guestCountInput.value = '';
+            elements.songInput.value = '';
             updateGuestFields(0);
         }
     }
@@ -418,6 +430,9 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
+        // Initially hide guest count and song fields
+        elements.guestCountGroup.style.display = 'none';
+        elements.songGroup.style.display = 'none';
         elements.guestCountInput.disabled = true;
         elements.guestCountInput.required = false;
 
